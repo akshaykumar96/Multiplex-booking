@@ -1,0 +1,18 @@
+
+<div class="row">
+        <div class="col-4" *ngFor="let item of productList">
+            <div class="card shadow m-3" style="background-color:black;
+            opacity: .9;"  >
+                <div class="card-header">
+                    <a href="#">
+                        <img src="assets\images\avatars\download.jpg" alt="Industrial Mech" />
+                    </a>
+                <div class="card-body">
+                    <h6 style="color:white">{{item.movieFirstName}}  {{item.movieSecondName}}</h6>
+                    <p style="color:grey">{{item.details}}</p>
+                    <a href="#" class="read-more"[routerLink]="['/details',item.id]">Read more &rarr;</a>
+                   
+                </div>
+            </div>
+        </div>
+    </div>

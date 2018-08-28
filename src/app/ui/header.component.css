@@ -1,0 +1,22 @@
+.dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 0;
+}
+
+
+
+/*This is modifying the btn-primary colors but you could create your own .btn-something class as well*/
+.btn-primary {
+    color: #fff;
+    background-color: #0495c9;
+    border-color: #357ebd; /*set the color you want here*/
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #357ebd;
+    background-color: #0980ac;
+    border-color: #0b79a1; /*set the color you want here*/
+}
+
+.hide {
+    display: none;
+}

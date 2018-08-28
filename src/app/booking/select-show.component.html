@@ -1,0 +1,119 @@
+<div class="container" >
+    <form  (submit)="submit($event)">
+  <div class="row" >
+    <div class="col-md-6" style="margin-top: 100px;">  
+      
+        <div class="card mt-4" >
+            <img class="card-img-top" src="assets\images\avatars\v3-2.jpg" alt="">
+            </div>
+        
+  
+    <div class="row">
+      <div class="col-md-6">
+        <p  style="color:rgb(255, 255, 255);font-weight:bold;margin-top:20px; font-size: 1.2em;" >{{models.movieFirstName}} {{models.movieSecondName}} </p> 
+      </div>
+    </div>
+    </div>
+    
+    <div class="col-md-6" style="margin-top: 80px">
+      <div class="row">
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" style="color: rgb(250, 250, 250); background-color: #00202c" for="inputGroupSelect01">Select Seats</label>
+                </div>
+                <select class="custom-select"  name="noOfTickets" [(ngModel)]="model.noOfTickets">
+                  <option value="0">Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                  <option value="4">Four</option>
+                  <option value="5">Five</option>
+                  <option value="6">Six</option>
+                  <option value="7">Seven</option>
+                  <option value="8">Eight</option>
+                  <option value="9">Nine</option>
+                </select>
+               
+            </div>
+           
+        </div>
+        
+        <div class="col-md-6">
+            <div class="input-group mb-1">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" style="color: rgb(250, 250, 250); background-color: #00202c" for="inputGroupSelect01">Class</label>
+                </div>
+                <select class="custom-select" name="classs"  [(ngModel)]="model.classs">
+                  <option value="0" >Select..</option>
+                  <option value="Silver">Silver</option>
+                  <option value="Gold">Gold</option>
+                  <option value="Platinum">Platinum</option>
+                
+                </select>
+            </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6">
+            <input type="date" id="date" class="form-control mr-3 my-1 form-control-md" placeholder="Date" name = "daate" [(ngModel)]="model.daate" value = "{{d | date:'dd/MM/yyyy'}}"/>
+            
+        
+          </div>
+        
+      </div>
+
+      <div class="row">
+          <div class="col-md-6" style="margin-top: 120px">
+                <div class="input-group mb-1">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text" style="color: rgb(250, 250, 250); background-color: #00202c" for="inputGroupSelect01">Screens</label>
+                        </div>
+                        <select class="custom-select" name="screen"  [(ngModel)]="model.screen">
+                          <option value="0" >Select..</option>
+                          <option value="1">Screen 1</option>
+                          <option value="2">Screen 2</option>
+                          <option value="3">Screen 3</option>
+                        
+                        </select>
+                    </div>
+                </div>  
+          
+          
+                <div class="col-md-6" style="margin-top: 120px">
+                      <div class="input-group mb-1">
+                              <div class="input-group-prepend">
+                                <label class="input-group-text" style="color: rgb(250, 250, 250); background-color: #00202c" for="inputGroupSelect01">Shows</label>
+                              </div>
+                              <select class="custom-select" name="shows" [(ngModel)]="model.shows">
+                                <option value="0" >Select..</option>
+                                <option value="10:00 am">10:00 am</option>
+                                <option value="12:00 pm">12:00 pm</option>
+                                <option value="2:00 pm">2:00 pm</option>
+                              
+                              </select>
+                          </div>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        
+                       <button  type="submit" class="btn btn-primary"  style="margin-top: 120px" [disabled]="!checkValid()" >Submit</button>
+                      </div>
+                    </div>
+                    <br>
+                  
+                       <div class="row">
+                         <div class="col-md-6">
+                       
+                       <span *ngIf="!checkValid()" style="text-align: center ;color: red">*Fields are missing</span>
+                       </div>
+                       </div>
+                    
+                
+      </div>
+  </div>
+ 
+</form>
+</div>

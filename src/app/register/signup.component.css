@@ -1,0 +1,32 @@
+.form_bg {
+   
+   
+    
+    border-radius:20px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 70px;
+    top: 80;
+    right: 70%;
+    bottom: 20;
+    left: 0;
+    width: 700px;
+    height: 480px;
+}
+
+.form_bg2 {
+    background-color:#eee;
+    color:#666;
+    padding:40px;
+    border-radius:20px;
+    position: absolute;
+    border:2px solid #fff;
+    margin: auto;
+    top: 80;
+    right: 0;
+    bottom: 20;
+    left: 110%;
+    width: 540px;
+    height: 480px;
+}
+

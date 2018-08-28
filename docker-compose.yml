@@ -1,0 +1,30 @@
+version: '2'
+services:
+  config:
+    image: "akshaykumar96/configserver"
+    ports:
+     - "9009:9009"
+  zuul:
+    image: "akshaykumar96/zuul"
+    ports:
+     - "9008:9008"
+  
+  multiplex:
+    image: "akshaykumar96/multiplex-app"
+    ports: 
+    - "9010:9010"
+
+  register:
+    image: "akshaykumar96/register"
+    ports:
+     - "9006:9006"
+
+  select:
+    image: "akshaykumar96/selectservice"
+    ports:
+    - "9007:9007"
+
+  booking:
+    image: "akshaykumar96/bookingticket"
+    ports:
+    - "9005:9005"

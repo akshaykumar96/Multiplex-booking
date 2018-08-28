@@ -1,0 +1,62 @@
+<div class="container">
+     <div class="row"> 
+    <div class="col-md-8">
+
+      <div class="card mt-4" style="margin-left: 20px;">
+        <img class="card-img-top" src="assets\images\avatars\v3-2.jpg"  alt="">
+        </div>
+        <div  >
+        <div class="card-body" >
+          <button class="btn btn-info"  (click)="butclick()" >BOOK NOW</button>
+        </div>
+        </div>
+        
+                   
+        </div>
+        <div class="col-md-4" style="margin-top:40px" >
+          
+          <label style="color:rgb(207, 207, 207)">Movie</label> 
+          <div>
+      
+          <!-- <button  style="color: gainsboro"> {{model.movieFirstName}} {{model.movieSecondName}}</button>  -->
+          <p  style="color: white; font-size: 1.4em; font-weight: bold; "> {{model.movieFirstName}} {{model.movieSecondName}}</p> 
+
+        </div>
+        <br>
+
+        <label style="color: rgb(207, 207, 207)">Cast</label>
+        <div>
+          <p  style="color:white;font-size: 1.3em;"type="text" size="35"> {{model.cast}}</p>   
+          <!-- <button  style="color:white"type="text" size="35"> {{model.cast}}</button>    -->
+         </div>
+
+
+        <br>
+        <label style="color:rgb(207, 207, 207)">Rating</label>
+        <div>
+          <p style="color:white; font-size: 1.3em;" type="text"  >{{model.ratings}}  </p>
+          <!-- <input style="color:white" type="text" [(ngModel)]="model.ratings"   /> -->
+        </div>
+        <br>
+        <label style="color: rgb(207, 207, 207)">Genre</label>
+        <div>
+          <p  style="color:white;font-size: 1.3em;"type="text" size="35"> {{model.type}}</p> 
+          <!-- <button  style="color:white"type="text" size="35"> {{model.type}}</button>  -->
+        </div>
+        <br>
+        
+
+         <label style="color:rgb(207, 207, 207)">Description</label>
+        <div>
+            <!-- <textarea style="color:blue" rows="5" cols="60" [(ngModel)]="model.details"></textarea> -->
+            <p  style="color: white; font-size: 1.1em;" > {{model.details}}</p> 
+            <!-- <button  style="color:blue" > {{model.details}}</button>  -->
+        </div>
+        
+          
+           
+        </div>
+        </div>
+      </div>
+
+

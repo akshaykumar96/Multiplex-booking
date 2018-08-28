@@ -1,0 +1,11 @@
+<div>
+        <section class="webdesigntuts-workshop">
+            <form (submit)="search()">          
+                <input type="text" placeholder="Go To Movies." [(ngModel)]="model.movieFirstName" name="movieFirstName">               
+                <button type="search" class=" btn btn-lg btn-primary pull-right btn-lg" >Search</button>
+            </form>
+            <app-trendingmovies></app-trendingmovies>
+        </section>
+        
+        
+        </div>

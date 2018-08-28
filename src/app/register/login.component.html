@@ -1,0 +1,24 @@
+<div class="form_bg" style="margin-top: 70px;margin-left: 610px">
+  <div class="card" style="width: 600px; margin: auto;">  
+         <div class="card-header bg-primary text-white"> 
+       
+     <h3>Log In</h3>
+       </div>
+       
+   
+     <form novalidate (submit)="submit($event)" #form1="ngForm">
+        <div [class]="messageClass" >Bad username/password.</div>
+       <div class="form-group" style="margin-left: 20px;margin-top: 10px">
+         <label class="control-label" for="userName">User Name: </label>
+         <input type="text" name="luserName" placeholder="Enter username" [(ngModel)]="lmodel.userName" style="margin-left: 13px" id="luserName"  />
+       </div>
+       <div class="form-group"  style="margin-left: 20px;margin-top: 10px">
+         <label class="control-label" >Password : </label>
+         <input type="password" style="margin-left: 20px"name="lpassword" placeholder="Enter password" [(ngModel)]="lmodel.password" id="lpassword" />
+       </div>
+       <div class="form-row">
+         <button type="submit" class="btn btn-primary pull-right" style="margin-left: 225px;margin-bottom: 20px">Sign In</button>
+       </div>
+     </form>
+ 
+   </div>
