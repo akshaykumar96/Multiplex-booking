@@ -12,7 +12,7 @@ services:
   multiplex:
     image: "akshaykumar96/multiplex-app"
     ports: 
-    - "9010:9010"
+    - "9010:80"
 
   register:
     image: "akshaykumar96/register"
